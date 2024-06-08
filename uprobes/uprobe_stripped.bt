@@ -1,0 +1,4 @@
+uprobe:/home/ubuntu/all-the-probes/uprobes/output/stripped:0x96990
+{
+    printf("Processing record: %s\n", str(sarg1, 8));
+}

@@ -1,0 +1,4 @@
+uprobe:/home/ubuntu/all-the-probes/uprobes/output/main:"main.processRecord"
+{
+    printf("Processing record: %s\n", str(sarg1));
+}
