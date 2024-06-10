@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  marp:
+    image: marpteam/marp-cli:latest
+    command: --html --engine ./engine.mjs --bespoke.progress=true -s .
+    environment: 
+     - LANG=$LANG
+    ports:
+      - 8080:8080
+    volumes:
+      - ./:/home/marp/app/

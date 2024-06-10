@@ -1,0 +1,163 @@
+ /* @theme ebpf */
+
+@import 'uncover';
+
+@font-face {
+  font-family: "Vienna";
+  src: url('vienna-font-regular.otf') format('opentype');
+}
+
+section {
+  color: #00AEEF;
+  font-size: xx-large;
+  letter-spacing: 0;
+}
+
+section.cover img[alt~="logo"] {
+  position: absolute;
+  bottom: 35px;
+  right: 51%;
+  width: 10%;
+}
+
+section.cover {
+  color: #000000;
+  background-color: #FFE100;
+}
+
+section.cover footer {
+  display:none;
+}
+
+section.lead {
+  font-size: 200%;
+  color: white;
+  background-color: #00AEEF;;
+}
+
+section.lead footer {
+  display:none;
+}
+
+text-cool-blue {
+  color: #D9F1FD; 
+}
+
+text-gray {
+  color: gray; 
+}
+
+font-vienna {
+  font-family: 'Vienna';
+  font-size: 50px;
+  position: absolute;
+  bottom: 28px;
+  right: 40%;
+}
+
+/* code {
+  display: inline-block;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+  letter-spacing: 0;
+  margin: -0.1em 0.15em;
+  padding: 0.1em 0.2em;
+  vertical-align: baseline;
+} */
+
+pre {
+  display: block;
+  margin: 1em 0 0 0;
+  min-height: 1em;
+  overflow: visible;
+}
+
+pre code {
+  margin: 0;
+  position: relative;
+  min-width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+}
+
+pre code svg[data-marp-fitting='svg'] {
+  max-height: calc(580px - 1em);
+}
+
+footer > p:first-child {
+  float: left;
+  text-align: left;
+  width: 33.3%; 
+}
+footer > p:nth-child(2) {
+  float: left;
+  text-align: center;
+  width: 33.4%; 
+}
+footer > p:last-child {
+  float: right;
+  text-align: right;
+  width: 33.3%; 
+}
+
+section::after {
+  display: flex;
+  background: lightgray; 
+  border-radius: 70px;
+  bottom: 43px;
+  right: 40px;
+  color: white;
+  height: 0.01em;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-shadow: none;
+  width: 0.01em;
+}
+
+section.cover::after {
+  display: none;
+}
+
+section.lead::after {
+  display:none;
+}
+
+section.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 14em;
+}
+
+section footer {
+  font-size: large;
+}
+
+section.content h5 {
+  position: fixed;
+  top: 50px;
+}
+
+section.content {
+  text-align: left;
+  position: relative; /* Ensure positioning context for absolute elements */
+  padding-top: 0px; /* Provide space for the background logo at the top */
+  background-image: url('https://ebpf.foundation/wp-content/uploads/sites/9/2023/03/ebpf-icon-292x300.png');
+  background-repeat: no-repeat;
+  background-position: right 33px top 30px;
+  background-size: 5%;
+}
+
+section.content ul {
+  margin: 0;
+}
+
+see {
+  position: absolute;
+  bottom: 100px;
+  color: lightgray;    
+  height: 20px;
+
+  font-size: 0.54em;
+}

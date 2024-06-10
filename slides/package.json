@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "@marp-team/marp-core": "^3.9.0",
+    "highlight.js": "^11.9.0",
+    "markdown-it-highlight-lines": "^1.0.2",
+    "markdown-it-include": "^2.0.0"
+  }
+}
